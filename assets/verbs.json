@@ -1,0 +1,45 @@
+{
+	"version": "0.0.1",
+	"verbs": [
+		{
+			"infinitive": "befehlen",
+			"simplePast": "befahl",
+			"pastParticiple": "hat befohlen",
+			"i18n": {
+				"en": "to command"
+			}
+		},
+		{
+			"infinitive": "beginnen",
+			"simplePast": "begann",
+			"pastParticiple": "hat begonnen",
+			"i18n": {
+				"en": "to begin"
+			}
+		},
+		{
+			"infinitive": "beißen",
+			"simplePast": "biss",
+			"pastParticiple": "hat gebissen",
+			"i18n": {
+				"en": "to bite"
+			}
+		},
+		{
+			"infinitive": "beschreiben",
+			"simplePast": "beschrieb",
+			"pastParticiple": "hat beschrieben",
+			"i18n": {
+				"en": "to describe"
+			}
+		},
+		{
+			"infinitive": "kommen",
+			"simplePast": "kommt",
+			"pastParticiple": "ist gekommen",
+			"i18n": {
+				"en": "to come"
+			}
+		}
+	]
+}

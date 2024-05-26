@@ -1,7 +1,16 @@
+import 'dart:collection';
+
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'db_verbs.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+      ChangeNotifierProvider(
+        create: (context) => VerbsModel(),
+        child: const MyApp()
+      ),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -31,13 +40,13 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrange),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'German Irregular Verbs'),
+      home: const MainPage(title: 'German Irregular Verbs'),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
+class MainPage extends StatefulWidget {
+  const MainPage({super.key, required this.title});
 
   // This widget is the home page of your application. It is stateful, meaning
   // that it has a State object (defined below) that contains fields that affect
@@ -51,10 +60,10 @@ class MyHomePage extends StatefulWidget {
   final String title;
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<MainPage> createState() => _MainPageState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _MainPageState extends State<MainPage> {
   int _selectedTab = 0;
 
   static const TextStyle optionStyle =
@@ -91,7 +100,7 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Center(
         child: switch (_selectedTab) {
-          == 1 => const Text("Verbs"),
+          == 1 => VerbsList(),
           == 2 => const Text("Settings"),
           _ => const Text("Practice"),
         }
@@ -115,6 +124,74 @@ class _MyHomePageState extends State<MyHomePage> {
         selectedItemColor: Theme.of(context).colorScheme.primary,
         onTap: _onItemTapped,
       ),
+    );
+  }
+}
+
+class VerbsModel extends ChangeNotifier {
+  VerbsDB verbsDatabase = VerbsDB.instance;
+  List<Verb> allVerbs = [];
+
+  /// An unmodifiable view of the items in the cart.
+  UnmodifiableListView<Verb> get verbs => UnmodifiableListView(allVerbs);
+
+  VerbsModel() {
+    refreshVerbs();
+  }
+
+  void add(Verb verb) {
+    allVerbs.add(verb);
+    // This call tells the widgets that are listening to this model to rebuild.
+    notifyListeners();
+  }
+
+  @override
+  void dispose() {
+    verbsDatabase.close();
+    print("close");
+    super.dispose();
+  }
+
+  refreshVerbs() {
+    verbsDatabase.getAllVerbs().then((value) {
+      allVerbs = value;
+      print("open");
+      notifyListeners();
+    });
+  }
+}
+
+// @override
+// void initState() {
+//   refreshVerbs();
+//   super.initState();
+// }
+//
+
+class VerbsList extends StatelessWidget {
+  const VerbsList({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Consumer<VerbsModel>(
+      builder: (context, verbs, child) {
+        String language = "en";
+        return ListView.builder(
+            itemCount: verbs.allVerbs.length,
+            itemBuilder: (BuildContext context, int index) {
+              Verb verb = verbs.allVerbs[index];
+              return CheckboxListTile(
+                title: Text("${verb.infinitive} - ${verb.simplePast} - ${verb.pastParticiple}"),
+                subtitle: Text(verb.translations?[language]),
+                value: verb.isActive,
+                onChanged: (bool? value) {
+                  print("Clicked value: $value, verb: $verb");
+                },
+                controlAffinity: ListTileControlAffinity.leading
+              );
+            }
+        );
+      }
     );
   }
 }
