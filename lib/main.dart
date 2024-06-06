@@ -155,8 +155,20 @@ class VerbsModel extends ChangeNotifier {
   refreshVerbs() {
     verbsDatabase.getAllVerbs().then((value) {
       allVerbs = value;
-      print("open");
       notifyListeners();
+    });
+  }
+
+  toggleVerb(Verb verb, bool isSelected) {
+    verbsDatabase.setVerbSelection(verb, isSelected).then((updateCount) {
+      if (updateCount == 1) {
+        verb.isActive = isSelected;
+        print("UPDATED: ${isSelected}");
+        notifyListeners();
+      } else {
+        print("NOT UPDATED");
+        // TODO: handle error?
+      }
     });
   }
 }
@@ -174,18 +186,20 @@ class VerbsList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Consumer<VerbsModel>(
-      builder: (context, verbs, child) {
+      builder: (context, verbsModel, child) {
         String language = "en";
         return ListView.builder(
-            itemCount: verbs.allVerbs.length,
+            itemCount: verbsModel.allVerbs.length,
             itemBuilder: (BuildContext context, int index) {
-              Verb verb = verbs.allVerbs[index];
+              Verb verb = verbsModel.allVerbs[index];
               return CheckboxListTile(
                 title: Text("${verb.infinitive} - ${verb.simplePast} - ${verb.pastParticiple}"),
                 subtitle: Text(verb.translations?[language]),
                 value: verb.isActive,
-                onChanged: (bool? value) {
-                  print("Clicked value: $value, verb: $verb");
+                onChanged: (bool? isSelected) {
+                  if (isSelected != null) {
+                    verbsModel.toggleVerb(verb, isSelected);
+                  }
                 },
                 controlAffinity: ListTileControlAffinity.leading
               );

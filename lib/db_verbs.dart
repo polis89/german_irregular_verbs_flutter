@@ -69,6 +69,16 @@ class VerbsDB {
     return result.map((json) => Verb.fromJson(json)).toList();
   }
 
+  Future<int> setVerbSelection(Verb verb, bool isSelected) async {
+    final db = await instance.database;
+    int update = await db.update(
+        "verbs",
+        { "isActive": isSelected ? 1 : 0 },
+        where: "id = ${verb.id}"
+    );
+    return update;
+  }
+
   Future close() async {
     final db = await instance.database;
     db.close();
@@ -76,14 +86,23 @@ class VerbsDB {
 }
 
 class Verb {
-  final String? infinitive;
-  final String? simplePast;
-  final String? pastParticiple;
-  final Map? translations;
-  final double? progress;
-  final bool? isActive;
+  final int id;
+  final String infinitive;
+  final String simplePast;
+  final String pastParticiple;
+  final Map translations;
+  final double progress;
+  bool isActive;
 
-  Verb({this.infinitive, this.simplePast,this.pastParticiple, this.translations, this.progress, this.isActive});
+  Verb({
+    required this.id,
+    required this.infinitive,
+    required this.simplePast,
+    required this.pastParticiple,
+    required this.translations,
+    required this.progress,
+    required this.isActive
+  });
 
   factory Verb.fromJson(Map<String, Object?> json) {
     String translationsDBPrefix = "translation_";
@@ -95,11 +114,12 @@ class Verb {
     }
 
     return Verb(
-      infinitive: json["infinitive"] as String?,
-      simplePast: json["simplePast"] as String?,
-      pastParticiple: json["pastParticiple"] as String?,
-      progress: json["progress"] as double?,
-      isActive: (json["isActive"] as int?) == 1,
+      id: json["id"] as int,
+      infinitive: json["infinitive"] as String,
+      simplePast: json["simplePast"] as String,
+      pastParticiple: json["pastParticiple"] as String,
+      progress: json["progress"] as double,
+      isActive: (json["isActive"] as int) == 1,
       translations: translations
     );
   }
