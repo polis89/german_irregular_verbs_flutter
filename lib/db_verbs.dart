@@ -16,7 +16,7 @@ class VerbsDB {
       return _db!;
     }
     // TODO: DELETE BEFORE PUBLISH
-    databaseFactory.deleteDatabase(join(await getDatabasesPath(), 'german_irregular_verbs'));
+    // databaseFactory.deleteDatabase(join(await getDatabasesPath(), 'german_irregular_verbs'));
     _db = await _initDatabase();
     return _db!;
   }

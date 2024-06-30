@@ -1,8 +1,8 @@
-import 'dart:collection';
-
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'db_verbs.dart';
+
+import 'model/verbs.dart';
+import 'verbs_list.dart';
 
 void main() {
   runApp(
@@ -128,84 +128,9 @@ class _MainPageState extends State<MainPage> {
   }
 }
 
-class VerbsModel extends ChangeNotifier {
-  VerbsDB verbsDatabase = VerbsDB.instance;
-  List<Verb> allVerbs = [];
-
-  /// An unmodifiable view of the items in the cart.
-  UnmodifiableListView<Verb> get verbs => UnmodifiableListView(allVerbs);
-
-  VerbsModel() {
-    refreshVerbs();
-  }
-
-  void add(Verb verb) {
-    allVerbs.add(verb);
-    // This call tells the widgets that are listening to this model to rebuild.
-    notifyListeners();
-  }
-
-  @override
-  void dispose() {
-    verbsDatabase.close();
-    print("close");
-    super.dispose();
-  }
-
-  refreshVerbs() {
-    verbsDatabase.getAllVerbs().then((value) {
-      allVerbs = value;
-      notifyListeners();
-    });
-  }
-
-  toggleVerb(Verb verb, bool isSelected) {
-    verbsDatabase.setVerbSelection(verb, isSelected).then((updateCount) {
-      if (updateCount == 1) {
-        verb.isActive = isSelected;
-        print("UPDATED: ${isSelected}");
-        notifyListeners();
-      } else {
-        print("NOT UPDATED");
-        // TODO: handle error?
-      }
-    });
-  }
-}
-
 // @override
 // void initState() {
 //   refreshVerbs();
 //   super.initState();
 // }
 //
-
-class VerbsList extends StatelessWidget {
-  const VerbsList({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Consumer<VerbsModel>(
-      builder: (context, verbsModel, child) {
-        String language = "en";
-        return ListView.builder(
-            itemCount: verbsModel.allVerbs.length,
-            itemBuilder: (BuildContext context, int index) {
-              Verb verb = verbsModel.allVerbs[index];
-              return CheckboxListTile(
-                title: Text("${verb.infinitive} - ${verb.simplePast} - ${verb.pastParticiple}"),
-                subtitle: Text(verb.translations?[language]),
-                value: verb.isActive,
-                onChanged: (bool? isSelected) {
-                  if (isSelected != null) {
-                    verbsModel.toggleVerb(verb, isSelected);
-                  }
-                },
-                controlAffinity: ListTileControlAffinity.leading
-              );
-            }
-        );
-      }
-    );
-  }
-}
