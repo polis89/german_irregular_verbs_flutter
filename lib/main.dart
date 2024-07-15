@@ -6,10 +6,8 @@ import 'verbs_list.dart';
 
 void main() {
   runApp(
-      ChangeNotifierProvider(
-        create: (context) => VerbsModel(),
-        child: const MyApp()
-      ),
+    ChangeNotifierProvider(
+        create: (context) => VerbsModel(), child: const MyApp()),
   );
 }
 
@@ -66,24 +64,6 @@ class MainPage extends StatefulWidget {
 class _MainPageState extends State<MainPage> {
   int _selectedTab = 0;
 
-  static const TextStyle optionStyle =
-      TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
-
-  static const List<Widget> _widgetOptions = <Widget>[
-    Text(
-      'Index 0: Home',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 1: Business',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 2: School',
-      style: optionStyle,
-    ),
-  ];
-
   void _onItemTapped(int index) {
     setState(() {
       _selectedTab = index;
@@ -96,15 +76,15 @@ class _MainPageState extends State<MainPage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.primary,
-        title: Text(widget.title, style: TextStyle(color: Theme.of(context).colorScheme.onPrimary)),
+        title: Text(widget.title,
+            style: TextStyle(color: Theme.of(context).colorScheme.onPrimary)),
       ),
       body: Center(
-        child: switch (_selectedTab) {
-          == 1 => VerbsList(),
-          == 2 => const Text("Settings"),
-          _ => const Text("Practice"),
-        }
-      ),
+          child: switch (_selectedTab) {
+        == 1 => VerbsList(),
+        == 2 => const Text("Settings"),
+        _ => buildMainScreen(context)
+      }),
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
@@ -122,9 +102,93 @@ class _MainPageState extends State<MainPage> {
         ],
         currentIndex: _selectedTab,
         selectedItemColor: Theme.of(context).colorScheme.primary,
+        backgroundColor: Theme.of(context).colorScheme.surface,
         onTap: _onItemTapped,
       ),
     );
+  }
+
+  Padding buildMainScreen(BuildContext context) {
+    return Padding(
+        padding: const EdgeInsets.only(top: 4.0, bottom: 4.0),
+        child: Column(
+          children: [
+            Expanded(
+              child: Row(
+                children: [
+                  Expanded(
+                    child: Card(
+                      color: Theme.of(context).colorScheme.surface,
+                      elevation: 3,
+                      child: Center(
+                        child: Text(
+                          "Fill the Gaps",
+                          style: TextStyle(
+                            color: Theme.of(context).colorScheme.onSurface,
+                            fontSize: 18.0,
+                          ),
+                        ),
+                      ), // Center the text inside the card
+                    ),
+                  ),
+                  Expanded(
+                    child: Card(
+                      color: Theme.of(context).colorScheme.surface,
+                      elevation: 3,
+                      child: Center(
+                        child: Text(
+                          "??",
+                          style: TextStyle(
+                            color: Theme.of(context).colorScheme.onSurface,
+                            fontSize: 18.0,
+                          ),
+                        ),
+                      ), // Center the text inside the card
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Expanded(
+              child: Container(
+                child: Row(
+                  children: [
+                    Expanded(
+                      child: Card(
+                        color: Theme.of(context).colorScheme.surface,
+                        elevation: 3,
+                        child: Center(
+                          child: Text(
+                            "Type",
+                            style: TextStyle(
+                              color: Theme.of(context).colorScheme.onSurface,
+                              fontSize: 18.0,
+                            ),
+                          ),
+                        ), // Center the text inside the card
+                      ),
+                    ),
+                    Expanded(
+                      child: Card(
+                        color: Theme.of(context).colorScheme.surface,
+                        elevation: 3,
+                        child: Center(
+                          child: Text(
+                            "True or False",
+                            style: TextStyle(
+                              color: Theme.of(context).colorScheme.onSurface,
+                              fontSize: 18.0,
+                            ),
+                          ),
+                        ), // Center the text inside the card
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ],
+        ));
   }
 }
 
