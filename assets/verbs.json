@@ -4,7 +4,32 @@
 		{
 			"infinitive": "backen",
 			"simplePast": "backte",
+			"simplePastAlt": "buk",
 			"pastParticiple": "hat gebacken",
+			"wrongSuggestions": {
+				"infinitive": [
+					"bucken",
+					"baecken",
+					"gebacken"
+				],
+				"simplePast": [
+					"buckte",
+					"back",
+					"backt",
+					"backten",
+					"gebacken",
+					"backen",
+					"backete",
+					"backte",
+					"bucken"
+				],
+				"pastParticiple": [
+					"gebackt",
+					"gebucken",
+					"gebockt",
+					"gebocken"
+				]
+			},
 			"i18n": {
 				"en": "to bake"
 			}
@@ -13,6 +38,23 @@
 			"infinitive": "befehlen",
 			"simplePast": "befahl",
 			"pastParticiple": "hat befohlen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [
+					"befehlen",
+					"befiehl",
+					"befehlte",
+					"befohl",
+					"befehl"
+				],
+				"pastParticiple": [
+					"befehlen",
+					"befiehlen",
+					"befohlt",
+					"befahlt",
+					"befahl"
+				]
+			},
 			"i18n": {
 				"en": "to command"
 			}
@@ -21,6 +63,27 @@
 			"infinitive": "beginnen",
 			"simplePast": "begann",
 			"pastParticiple": "hat begonnen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [
+					"beginnte",
+					"beginn",
+					"begonn",
+					"begonnt",
+					"begannte",
+					"begannete",
+					"beginneten",
+					"beganneten",
+					"beginnen"
+				],
+				"pastParticiple": [
+					"beginnen",
+					"begannen",
+					"begannt",
+					"begonnt",
+					"beginnt"
+				]
+			},
 			"i18n": {
 				"en": "to begin"
 			}
@@ -29,14 +92,104 @@
 			"infinitive": "beißen",
 			"simplePast": "biss",
 			"pastParticiple": "hat gebissen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [
+					"bissen",
+					"beißte",
+					"beißten",
+					"beißen",
+					"beißten",
+					"beiß",
+					"bass",
+					"bossen"
+				],
+				"pastParticiple": [
+					"gebeißen",
+					"gebossen",
+					"gebießt",
+					"gebassen",
+					"gebasst"
+				]
+			},
 			"i18n": {
 				"en": "to bite"
+			}
+		},
+		{
+			"infinitive": "bekommen",
+			"simplePast": "bekam",
+			"pastParticiple": "hat bekommen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [
+					"bekommen",
+					"bekommt",
+					"bekammen",
+					"bekom",
+					"bekim",
+					"bekammt"
+				],
+				"pastParticiple": [
+					"bekamen",
+					"bekamt",
+					"bekam",
+					"bekom"
+				]
+			},
+			"i18n": {
+				"en": "to get"
+			}
+		},
+		{
+			"infinitive": "bergen",
+			"simplePast": "barg",
+			"pastParticiple": "hat geborgen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [
+					"bergen",
+					"burg",
+					"birg",
+					"berg",
+					"burgen",
+					"birgen",
+					"bargen"
+				],
+				"pastParticiple": [
+					"geborgt",
+					"gebargen",
+					"gebargt",
+					"gebergen",
+					"gebergt"
+				]
+			},
+			"i18n": {
+				"en": "to rescue"
 			}
 		},
 		{
 			"infinitive": "betrügen",
 			"simplePast": "betrog",
 			"pastParticiple": "hat betrogen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [
+					"betrügten",
+					"betrügen",
+					"betrug",
+					"betrag",
+					"betrogen",
+					"betrieg"
+				],
+				"pastParticiple": [
+					"betrügen",
+					"betrügt",
+					"betrogt",
+					"betragt",
+					"betragen"
+				]
+			},
 			"i18n": {
 				"en": "to deceive"
 			}
@@ -45,14 +198,75 @@
 			"infinitive": "bewegen",
 			"simplePast": "bewog",
 			"pastParticiple": "hat bewogen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [
+					"bewegen",
+					"bewogen",
+					"bewag",
+					"bewagen",
+					"beweg",
+					"bewug"
+				],
+				"pastParticiple": [
+					"bewegen",
+					"bewegt",
+					"bewogt",
+					"bewagen",
+					"bewagt"
+				]
+			},
 			"i18n": {
 				"en": "to move"
 			}
 		},
 		{
+			"infinitive": "beweisen",
+			"simplePast": "bewies",
+			"pastParticiple": "hat bewiesen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [
+					"beweisen",
+					"beweis",
+					"bewuss",
+					"bewiss",
+					"bewiesen"
+				],
+				"pastParticiple": [
+					"beweisen",
+					"beweist",
+					"bewiest",
+					"bewussen",
+					"bewusst"
+				]
+			},
+			"i18n": {
+				"en": "to prove"
+			}
+		},
+		{
 			"infinitive": "biegen",
 			"simplePast": "bog",
-			"pastParticiple": "ist gebogen",
+			"pastParticiple": "ist/hat gebogen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [
+					"biegen",
+					"bogen",
+					"bieg",
+					"bag",
+					"bagen",
+					"bug"
+				],
+				"pastParticiple": [
+					"gebiegen",
+					"gebiegt",
+					"gebogt",
+					"gebagen",
+					"gebugen"
+				]
+			},
 			"i18n": {
 				"en": "to bend"
 			}
@@ -61,6 +275,11 @@
 			"infinitive": "bieten",
 			"simplePast": "bot",
 			"pastParticiple": "hat geboten",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to offer"
 			}
@@ -69,6 +288,11 @@
 			"infinitive": "binden",
 			"simplePast": "band",
 			"pastParticiple": "hat gebunden",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to tie"
 			}
@@ -77,6 +301,11 @@
 			"infinitive": "bitten",
 			"simplePast": "bat",
 			"pastParticiple": "hat gebeten",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to request"
 			}
@@ -85,6 +314,11 @@
 			"infinitive": "blasen",
 			"simplePast": "blies",
 			"pastParticiple": "hat geblasen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to blow"
 			}
@@ -93,6 +327,11 @@
 			"infinitive": "bleiben",
 			"simplePast": "blieb",
 			"pastParticiple": "ist geblieben",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to remain"
 			}
@@ -101,6 +340,11 @@
 			"infinitive": "braten",
 			"simplePast": "briet",
 			"pastParticiple": "ist gebraten",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to roast"
 			}
@@ -109,6 +353,11 @@
 			"infinitive": "brechen",
 			"simplePast": "brach",
 			"pastParticiple": "hat gebrochen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to break"
 			}
@@ -117,6 +366,11 @@
 			"infinitive": "brennen",
 			"simplePast": "brannte",
 			"pastParticiple": "hat gebrannt",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to burn"
 			}
@@ -125,6 +379,11 @@
 			"infinitive": "bringen",
 			"simplePast": "brachte",
 			"pastParticiple": "hat gebracht",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to bring"
 			}
@@ -133,6 +392,11 @@
 			"infinitive": "beschreiben",
 			"simplePast": "beschrieb",
 			"pastParticiple": "hat beschrieben",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to describe"
 			}
@@ -141,6 +405,11 @@
 			"infinitive": "denken",
 			"simplePast": "dachte",
 			"pastParticiple": "hat gedacht",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to think"
 			}
@@ -149,6 +418,11 @@
 			"infinitive": "dürfen",
 			"simplePast": "durfte",
 			"pastParticiple": "hat gedurft",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to be allowed to"
 			}
@@ -157,6 +431,11 @@
 			"infinitive": "empfehlen",
 			"simplePast": "empfahl",
 			"pastParticiple": "hat empfohlen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to recommend"
 			}
@@ -165,6 +444,11 @@
 			"infinitive": "erschrecken",
 			"simplePast": "erschrak",
 			"pastParticiple": "ist erschrocken",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to be frightened"
 			}
@@ -173,6 +457,11 @@
 			"infinitive": "essen",
 			"simplePast": "aß",
 			"pastParticiple": "hat gegessen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to eat"
 			}
@@ -181,6 +470,11 @@
 			"infinitive": "fahren",
 			"simplePast": "fuhr",
 			"pastParticiple": "ist gefahren",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to go (not on foot)"
 			}
@@ -189,6 +483,11 @@
 			"infinitive": "fallen",
 			"simplePast": "fiel",
 			"pastParticiple": "ist gefallen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to fall"
 			}
@@ -197,6 +496,11 @@
 			"infinitive": "fangen",
 			"simplePast": "fing",
 			"pastParticiple": "hat gefangen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to catch"
 			}
@@ -205,6 +509,11 @@
 			"infinitive": "finden",
 			"simplePast": "fand",
 			"pastParticiple": "hat gefunden",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to find"
 			}
@@ -213,6 +522,11 @@
 			"infinitive": "fliegen",
 			"simplePast": "flog",
 			"pastParticiple": "ist geflogen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to fly"
 			}
@@ -221,6 +535,11 @@
 			"infinitive": "fliehen",
 			"simplePast": "floh",
 			"pastParticiple": "ist geflohen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to flee"
 			}
@@ -229,6 +548,11 @@
 			"infinitive": "fließen",
 			"simplePast": "floss",
 			"pastParticiple": "hat geflossen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to flow"
 			}
@@ -237,6 +561,11 @@
 			"infinitive": "fressen",
 			"simplePast": "fraß",
 			"pastParticiple": "hat gefressen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to eat (done by animals)"
 			}
@@ -245,6 +574,11 @@
 			"infinitive": "frieren",
 			"simplePast": "fror",
 			"pastParticiple": "ist gefroren",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to freeze"
 			}
@@ -253,6 +587,11 @@
 			"infinitive": "geben",
 			"simplePast": "gab",
 			"pastParticiple": "hat gegeben",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to give"
 			}
@@ -261,6 +600,11 @@
 			"infinitive": "gedeihen",
 			"simplePast": "gedieh",
 			"pastParticiple": "ist gediehen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to flourish"
 			}
@@ -269,6 +613,11 @@
 			"infinitive": "gehen",
 			"simplePast": "ging",
 			"pastParticiple": "ist gegangen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to walk"
 			}
@@ -277,6 +626,11 @@
 			"infinitive": "gelingen",
 			"simplePast": "gelang",
 			"pastParticiple": "ist gelungen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to succeed"
 			}
@@ -285,6 +639,11 @@
 			"infinitive": "gelten",
 			"simplePast": "galt",
 			"pastParticiple": "hat gegolten",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to be valid"
 			}
@@ -293,6 +652,11 @@
 			"infinitive": "genießen",
 			"simplePast": "genoss",
 			"pastParticiple": "hat genossen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to enjoy"
 			}
@@ -301,6 +665,11 @@
 			"infinitive": "geraten",
 			"simplePast": "geriet",
 			"pastParticiple": "ist geraten",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to fall into"
 			}
@@ -309,6 +678,11 @@
 			"infinitive": "geschehen",
 			"simplePast": "geschah",
 			"pastParticiple": "ist geschehen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to happen"
 			}
@@ -317,6 +691,11 @@
 			"infinitive": "gewinnen",
 			"simplePast": "gewann",
 			"pastParticiple": "hat gewonnen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to win"
 			}
@@ -325,6 +704,11 @@
 			"infinitive": "gießen",
 			"simplePast": "goss",
 			"pastParticiple": "hat gegossen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to pour"
 			}
@@ -333,6 +717,11 @@
 			"infinitive": "gleichen",
 			"simplePast": "glich",
 			"pastParticiple": "hat geglichen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to resemble"
 			}
@@ -341,6 +730,11 @@
 			"infinitive": "gleiten",
 			"simplePast": "glitt",
 			"pastParticiple": "ist geglitten",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to glide"
 			}
@@ -349,6 +743,11 @@
 			"infinitive": "graben",
 			"simplePast": "grub",
 			"pastParticiple": "hat gegraben",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to dig"
 			}
@@ -357,6 +756,11 @@
 			"infinitive": "greifen",
 			"simplePast": "griff",
 			"pastParticiple": "hat gegriffen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to grasp"
 			}
@@ -365,6 +769,11 @@
 			"infinitive": "haben",
 			"simplePast": "hatte",
 			"pastParticiple": "hat gehabt",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to have"
 			}
@@ -373,6 +782,11 @@
 			"infinitive": "halten",
 			"simplePast": "hielt",
 			"pastParticiple": "hat gehalten",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to hold"
 			}
@@ -381,6 +795,11 @@
 			"infinitive": "hängen",
 			"simplePast": "hing",
 			"pastParticiple": "hat gehangen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to be hanging"
 			}
@@ -389,6 +808,11 @@
 			"infinitive": "heben",
 			"simplePast": "hob",
 			"pastParticiple": "hat gehoben",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to raise"
 			}
@@ -397,6 +821,11 @@
 			"infinitive": "heißen",
 			"simplePast": "hieß",
 			"pastParticiple": "hat geheißen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to be called"
 			}
@@ -405,6 +834,11 @@
 			"infinitive": "helfen",
 			"simplePast": "half",
 			"pastParticiple": "hat geholfen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to help"
 			}
@@ -413,6 +847,11 @@
 			"infinitive": "kennen",
 			"simplePast": "kannte",
 			"pastParticiple": "hat gekannt",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to know"
 			}
@@ -421,6 +860,11 @@
 			"infinitive": "klingen",
 			"simplePast": "klang",
 			"pastParticiple": "hat geklungen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to sound"
 			}
@@ -429,6 +873,11 @@
 			"infinitive": "kommen",
 			"simplePast": "kam",
 			"pastParticiple": "ist gekommen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to come"
 			}
@@ -437,6 +886,11 @@
 			"infinitive": "können",
 			"simplePast": "konnte",
 			"pastParticiple": "hat gekonnt",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to can"
 			}
@@ -445,6 +899,11 @@
 			"infinitive": "kriechen",
 			"simplePast": "kroch",
 			"pastParticiple": "ist gekrochen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to crawl"
 			}
@@ -453,6 +912,11 @@
 			"infinitive": "laden",
 			"simplePast": "lud",
 			"pastParticiple": "hat geladen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to load"
 			}
@@ -461,6 +925,11 @@
 			"infinitive": "lassen",
 			"simplePast": "ließ",
 			"pastParticiple": "hat gelassen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to let"
 			}
@@ -469,6 +938,11 @@
 			"infinitive": "laufen",
 			"simplePast": "lief",
 			"pastParticiple": "ist gelaufen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to run"
 			}
@@ -477,6 +951,11 @@
 			"infinitive": "leiden",
 			"simplePast": "litt",
 			"pastParticiple": "hat gelitten",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to suffer"
 			}
@@ -485,6 +964,11 @@
 			"infinitive": "leihen",
 			"simplePast": "lieh",
 			"pastParticiple": "hat geliehen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to lend"
 			}
@@ -493,6 +977,11 @@
 			"infinitive": "lesen",
 			"simplePast": "las",
 			"pastParticiple": "hat gelesen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to read"
 			}
@@ -501,6 +990,11 @@
 			"infinitive": "liegen",
 			"simplePast": "lag",
 			"pastParticiple": "hat gelegen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to lie"
 			}
@@ -509,6 +1003,11 @@
 			"infinitive": "lügen",
 			"simplePast": "log",
 			"pastParticiple": "hat gelogen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to tell lies"
 			}
@@ -517,6 +1016,11 @@
 			"infinitive": "messen",
 			"simplePast": "maß",
 			"pastParticiple": "hat gemessen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to measure"
 			}
@@ -525,6 +1029,11 @@
 			"infinitive": "mögen",
 			"simplePast": "mochte",
 			"pastParticiple": "hat gemocht",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to like"
 			}
@@ -533,6 +1042,11 @@
 			"infinitive": "müssen",
 			"simplePast": "musste",
 			"pastParticiple": "hat gemusst",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "must"
 			}
@@ -541,6 +1055,11 @@
 			"infinitive": "nehmen",
 			"simplePast": "nahm",
 			"pastParticiple": "hat genommen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to take"
 			}
@@ -549,6 +1068,11 @@
 			"infinitive": "nennen",
 			"simplePast": "nannte",
 			"pastParticiple": "hat genannt",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to name"
 			}
@@ -557,6 +1081,11 @@
 			"infinitive": "pfeifen",
 			"simplePast": "pfiff",
 			"pastParticiple": "hat gepfiffen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to whistle"
 			}
@@ -565,6 +1094,11 @@
 			"infinitive": "raten",
 			"simplePast": "riet",
 			"pastParticiple": "hat geraten",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to advise"
 			}
@@ -573,6 +1107,11 @@
 			"infinitive": "reiben",
 			"simplePast": "rieb",
 			"pastParticiple": "hat gerieben",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to rub"
 			}
@@ -581,6 +1120,11 @@
 			"infinitive": "reißen",
 			"simplePast": "riss",
 			"pastParticiple": "hat gerissen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to tear"
 			}
@@ -589,6 +1133,11 @@
 			"infinitive": "reiten",
 			"simplePast": "ritt",
 			"pastParticiple": "ist geritten",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to ride (on horse)"
 			}
@@ -597,6 +1146,11 @@
 			"infinitive": "rennen",
 			"simplePast": "rannte",
 			"pastParticiple": "ist gerannt",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to run"
 			}
@@ -605,6 +1159,11 @@
 			"infinitive": "riechen",
 			"simplePast": "roch",
 			"pastParticiple": "hat gerochen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to smell"
 			}
@@ -613,6 +1172,11 @@
 			"infinitive": "rufen",
 			"simplePast": "rief",
 			"pastParticiple": "hat gerufen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to call"
 			}
@@ -621,6 +1185,11 @@
 			"infinitive": "scheiden",
 			"simplePast": "schied",
 			"pastParticiple": "ist geschieden",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to separate"
 			}
@@ -629,6 +1198,11 @@
 			"infinitive": "scheinen",
 			"simplePast": "schien",
 			"pastParticiple": "hat geschienen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to seem"
 			}
@@ -637,6 +1211,11 @@
 			"infinitive": "schieben",
 			"simplePast": "schob",
 			"pastParticiple": "hat geschoben",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to shove"
 			}
@@ -645,6 +1224,11 @@
 			"infinitive": "schießen",
 			"simplePast": "schoss",
 			"pastParticiple": "hat geschossen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to shoot"
 			}
@@ -653,6 +1237,11 @@
 			"infinitive": "schlafen",
 			"simplePast": "schlief",
 			"pastParticiple": "hat geschlafen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to sleep"
 			}
@@ -661,6 +1250,11 @@
 			"infinitive": "schlagen",
 			"simplePast": "schlug",
 			"pastParticiple": "hat geschlagen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to hit"
 			}
@@ -669,6 +1263,11 @@
 			"infinitive": "schließen",
 			"simplePast": "schloss",
 			"pastParticiple": "hat geschlossen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to shut"
 			}
@@ -677,6 +1276,11 @@
 			"infinitive": "schneiden",
 			"simplePast": "schnitt",
 			"pastParticiple": "hat geschnitten",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to cut"
 			}
@@ -685,6 +1289,11 @@
 			"infinitive": "schreiben",
 			"simplePast": "schrieb",
 			"pastParticiple": "hat geschrieben",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to write"
 			}
@@ -693,6 +1302,11 @@
 			"infinitive": "schreien",
 			"simplePast": "schrie",
 			"pastParticiple": "hat geschrien",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to yell"
 			}
@@ -701,6 +1315,11 @@
 			"infinitive": "schweigen",
 			"simplePast": "schwieg",
 			"pastParticiple": "hat geschwiegen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to be(come) silent"
 			}
@@ -709,6 +1328,11 @@
 			"infinitive": "schwellen",
 			"simplePast": "schwoll",
 			"pastParticiple": "ist geschwollen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to swell"
 			}
@@ -717,6 +1341,11 @@
 			"infinitive": "schwimmen",
 			"simplePast": "schwamm",
 			"pastParticiple": "ist geschwommen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to swim"
 			}
@@ -725,6 +1354,11 @@
 			"infinitive": "schwingen",
 			"simplePast": "schwang",
 			"pastParticiple": "hat geschwungen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to swing"
 			}
@@ -733,6 +1367,11 @@
 			"infinitive": "schwören",
 			"simplePast": "schwur",
 			"pastParticiple": "hat geschworen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to swear"
 			}
@@ -741,6 +1380,11 @@
 			"infinitive": "sehen",
 			"simplePast": "sah",
 			"pastParticiple": "hat gesehen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to see"
 			}
@@ -749,6 +1393,11 @@
 			"infinitive": "sein",
 			"simplePast": "war",
 			"pastParticiple": "ist gewesen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to be"
 			}
@@ -757,6 +1406,11 @@
 			"infinitive": "senden",
 			"simplePast": "sandte",
 			"pastParticiple": "hat gesandt",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to send"
 			}
@@ -765,6 +1419,11 @@
 			"infinitive": "singen",
 			"simplePast": "sang",
 			"pastParticiple": "hat gesungen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to sing"
 			}
@@ -773,6 +1432,11 @@
 			"infinitive": "sinken",
 			"simplePast": "sank",
 			"pastParticiple": "ist gesunken",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to sink"
 			}
@@ -781,6 +1445,11 @@
 			"infinitive": "sitzen",
 			"simplePast": "saß",
 			"pastParticiple": "hat gesessen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to be sitting"
 			}
@@ -789,6 +1458,11 @@
 			"infinitive": "sollen",
 			"simplePast": "sollte",
 			"pastParticiple": "hat gesollt",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to be obliged to"
 			}
@@ -797,6 +1471,11 @@
 			"infinitive": "sprechen",
 			"simplePast": "sprach",
 			"pastParticiple": "hat gesprochen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to speak"
 			}
@@ -805,6 +1484,11 @@
 			"infinitive": "springen",
 			"simplePast": "sprang",
 			"pastParticiple": "ist gesprungen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to jump"
 			}
@@ -813,6 +1497,11 @@
 			"infinitive": "stechen",
 			"simplePast": "stach",
 			"pastParticiple": "hat gestochen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to sting"
 			}
@@ -821,6 +1510,11 @@
 			"infinitive": "stehen",
 			"simplePast": "stand",
 			"pastParticiple": "hat gestanden",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to stand"
 			}
@@ -829,6 +1523,11 @@
 			"infinitive": "stehlen",
 			"simplePast": "stahl",
 			"pastParticiple": "hat gestohlen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to steal"
 			}
@@ -837,6 +1536,11 @@
 			"infinitive": "steigen",
 			"simplePast": "stieg",
 			"pastParticiple": "ist gestiegen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to rise"
 			}
@@ -845,6 +1549,11 @@
 			"infinitive": "sterben",
 			"simplePast": "starb",
 			"pastParticiple": "ist gestorben",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to die"
 			}
@@ -853,6 +1562,11 @@
 			"infinitive": "stinken",
 			"simplePast": "stank",
 			"pastParticiple": "hat gestunken",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to stink"
 			}
@@ -861,6 +1575,11 @@
 			"infinitive": "stoßen",
 			"simplePast": "stieß",
 			"pastParticiple": "hat gestoßen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to push"
 			}
@@ -869,6 +1588,11 @@
 			"infinitive": "streiten",
 			"simplePast": "stritt",
 			"pastParticiple": "hat gestritten",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to quarrel"
 			}
@@ -877,6 +1601,11 @@
 			"infinitive": "tragen",
 			"simplePast": "trug",
 			"pastParticiple": "hat getragen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to carry"
 			}
@@ -885,6 +1614,11 @@
 			"infinitive": "treffen",
 			"simplePast": "traf",
 			"pastParticiple": "hat getroffen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to meet"
 			}
@@ -893,6 +1627,11 @@
 			"infinitive": "treiben",
 			"simplePast": "trieb",
 			"pastParticiple": "hat getrieben",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to force"
 			}
@@ -901,6 +1640,11 @@
 			"infinitive": "treten",
 			"simplePast": "trat",
 			"pastParticiple": "ist getreten",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to step"
 			}
@@ -909,6 +1653,11 @@
 			"infinitive": "trinken",
 			"simplePast": "trank",
 			"pastParticiple": "hat getrunken",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to drink"
 			}
@@ -917,6 +1666,11 @@
 			"infinitive": "tun",
 			"simplePast": "tat",
 			"pastParticiple": "hat getan",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to do"
 			}
@@ -925,6 +1679,11 @@
 			"infinitive": "verbergen",
 			"simplePast": "verbarg",
 			"pastParticiple": "hat verborgen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to hide"
 			}
@@ -933,6 +1692,11 @@
 			"infinitive": "verderben",
 			"simplePast": "verdarb",
 			"pastParticiple": "hat verdorben",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to spoil"
 			}
@@ -941,6 +1705,11 @@
 			"infinitive": "vergessen",
 			"simplePast": "vergaß",
 			"pastParticiple": "hat vergessen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to forget"
 			}
@@ -949,6 +1718,11 @@
 			"infinitive": "verlassen",
 			"simplePast": "verließ",
 			"pastParticiple": "hat verlassen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to leave"
 			}
@@ -957,6 +1731,11 @@
 			"infinitive": "verlieren",
 			"simplePast": "verlor",
 			"pastParticiple": "hat verloren",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to lose"
 			}
@@ -965,6 +1744,11 @@
 			"infinitive": "vermeiden",
 			"simplePast": "vermied",
 			"pastParticiple": "hat vermieden",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to avoid"
 			}
@@ -973,6 +1757,11 @@
 			"infinitive": "verschwinden",
 			"simplePast": "verschwand",
 			"pastParticiple": "ist verschwunden",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to disappear"
 			}
@@ -981,6 +1770,11 @@
 			"infinitive": "verzeihen",
 			"simplePast": "verzieh",
 			"pastParticiple": "hat verziehen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to excuse"
 			}
@@ -989,6 +1783,11 @@
 			"infinitive": "wachsen",
 			"simplePast": "wuchs",
 			"pastParticiple": "ist gewachsen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to grow"
 			}
@@ -997,6 +1796,11 @@
 			"infinitive": "waschen",
 			"simplePast": "wusch",
 			"pastParticiple": "hat gewaschen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to wash"
 			}
@@ -1005,6 +1809,11 @@
 			"infinitive": "wenden",
 			"simplePast": "wandte",
 			"pastParticiple": "hat gewandt",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to turn"
 			}
@@ -1013,6 +1822,11 @@
 			"infinitive": "werben",
 			"simplePast": "warb",
 			"pastParticiple": "hat geworben",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to advertise"
 			}
@@ -1021,6 +1835,11 @@
 			"infinitive": "werden",
 			"simplePast": "wurde",
 			"pastParticiple": "ist geworden",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to become"
 			}
@@ -1029,6 +1848,11 @@
 			"infinitive": "werfen",
 			"simplePast": "warf",
 			"pastParticiple": "hat geworfen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to throw"
 			}
@@ -1037,6 +1861,11 @@
 			"infinitive": "wiegen",
 			"simplePast": "wog",
 			"pastParticiple": "hat gewogen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to weigh"
 			}
@@ -1045,6 +1874,11 @@
 			"infinitive": "wissen",
 			"simplePast": "wusste",
 			"pastParticiple": "hat gewusst",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to know"
 			}
@@ -1053,6 +1887,11 @@
 			"infinitive": "wollen",
 			"simplePast": "wollte",
 			"pastParticiple": "hat gewollt",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to want"
 			}
@@ -1061,6 +1900,11 @@
 			"infinitive": "ziehen",
 			"simplePast": "zog",
 			"pastParticiple": "hat gezogen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to pull"
 			}
@@ -1069,6 +1913,11 @@
 			"infinitive": "gezogen",
 			"simplePast": "zwang",
 			"pastParticiple": "hat gezwungen",
+			"wrongSuggestions": {
+				"infinitive": [],
+				"simplePast": [],
+				"pastParticiple": []
+			},
 			"i18n": {
 				"en": "to force"
 			}
